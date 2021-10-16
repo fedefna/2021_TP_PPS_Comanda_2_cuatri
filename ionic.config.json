@@ -1,0 +1,7 @@
+{
+  "name": "SegundoParcial_PPS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
