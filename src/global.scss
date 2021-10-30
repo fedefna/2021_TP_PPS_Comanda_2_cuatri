@@ -24,3 +24,15 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.alertita {
+    --background: rgb(207, 207, 207);
+border-radius: 2em;
+    button.alertButton {
+        color: #ff8e62;
+    }
+    h2.alertita {
+        color: aliceblue;
+    }
+}

@@ -1,0 +1,41 @@
+
+<ion-content>
+  <ion-img class="icono" lines="none" src="assets/img/logo.png"></ion-img>
+
+
+    <form>
+      <ion-card class="card">
+      <ion-item lines="none">
+        <ion-label position="floating"><span>Usuario: </span></ion-label>
+        <ion-input class="inputStilo" value={{mail}} type="text" #email required> </ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label position="floating"><span>Clave: </span></ion-label>
+        <ion-input class="inputStilo" expand="block" type="password" #password value={{pass}} required>
+        </ion-input>
+      </ion-item>
+    </ion-card>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" (click)="onLogin(email, password)" class="fancy-button" expand="block">
+            Ingresar</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+
+ 
+
+  <ion-fab horizontal="start" vertical="bottom" slot="fixed">
+    <ion-fab-button color="warning">
+      <ion-icon md="caret-up" color="light"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light" (click)="onClick('admin')">
+        <ion-icon name="person" color="dark"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light" (click)="onClick('cliente')">
+        <ion-icon name="person" color="medium"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
